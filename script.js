@@ -1,21 +1,23 @@
 const recipes = [
   // Breakfast
-  {name: "Pancakes", category: "Breakfast", image: "https://images.unsplash.com/photo-1584270354949-b192a70e1d1b?auto=format&fit=crop&w=400&q=80", details: "Flour, eggs, milk, sugar, baking powder, butter.\nCook and serve with syrup."},
-  {name: "Scrambled Eggs", category: "Breakfast", image: "https://images.unsplash.com/photo-1584270354949-b192a70e1d1b?auto=format&fit=crop&w=400&q=80", details: "Eggs, milk, salt, pepper.\nWhisk eggs and milk, cook in pan until fluffy."},
-  {name: "Avocado Toast", category: "Breakfast", image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80", details: "Bread, avocado, salt, pepper, lemon juice.\nToast bread, smash avocado, spread on top."},
+  {name: "Pancakes", category: "Breakfast", image: "https://picsum.photos/400/300?random=1", details: "Flour, eggs, milk, sugar, baking powder, butter.\nCook and serve with syrup."},
+  {name: "Scrambled Eggs", category: "Breakfast", image: "https://picsum.photos/400/300?random=2", details: "Eggs, milk, salt, pepper.\nWhisk eggs and milk, cook in pan until fluffy."},
+  {name: "Avocado Toast", category: "Breakfast", image: "https://picsum.photos/400/300?random=3", details: "Bread, avocado, salt, pepper, lemon juice.\nToast bread, smash avocado, spread on top."},
 
   // Lunch
-  {name: "Grilled Cheese Sandwich", category: "Lunch", image: "https://images.unsplash.com/photo-1604894238410-3efc9f2c75fa?auto=format&fit=crop&w=400&q=80", details: "Bread, cheese, butter.\nGrill until golden brown."},
-  {name: "Caesar Salad", category: "Lunch", image: "https://images.unsplash.com/photo-1608756431408-2a9df5e97c8b?auto=format&fit=crop&w=400&q=80", details: "Lettuce, croutons, parmesan, Caesar dressing.\nMix all ingredients."},
+  {name: "Grilled Cheese Sandwich", category: "Lunch", image: "https://picsum.photos/400/300?random=4", details: "Bread, cheese, butter.\nGrill until golden brown."},
+  {name: "Caesar Salad", category: "Lunch", image: "https://picsum.photos/400/300?random=5", details: "Lettuce, croutons, parmesan, Caesar dressing.\nMix all ingredients."},
+  {name: "BLT Sandwich", category: "Lunch", image: "https://picsum.photos/400/300?random=6", details: "Bacon, lettuce, tomato, bread, mayo.\nAssemble ingredients between toasted bread."},
 
   // Dinner
-  {name: "Spaghetti Bolognese", category: "Dinner", image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80", details: "Spaghetti, minced meat, tomato sauce, onions, garlic.\nCook pasta, make sauce, serve together."},
-  {name: "Chicken Curry", category: "Dinner", image: "https://images.unsplash.com/photo-1603079612093-7c71e479f93f?auto=format&fit=crop&w=400&q=80", details: "Chicken, curry powder, coconut milk, onions.\nCook everything together and serve with rice."},
+  {name: "Spaghetti Bolognese", category: "Dinner", image: "https://picsum.photos/400/300?random=7", details: "Spaghetti, minced meat, tomato sauce, onions, garlic.\nCook pasta, make sauce, serve together."},
+  {name: "Chicken Curry", category: "Dinner", image: "https://picsum.photos/400/300?random=8", details: "Chicken, curry powder, coconut milk, onions.\nCook everything together and serve with rice."},
+  {name: "Grilled Salmon", category: "Dinner", image: "https://picsum.photos/400/300?random=9", details: "Salmon fillet, lemon, garlic, herbs.\nGrill until cooked and serve with vegetables."},
 
   // Dessert
-  {name: "Chocolate Chip Cookies", category: "Dessert", image: "https://images.unsplash.com/photo-1606312611880-7b3fd9d0d0b0?auto=format&fit=crop&w=400&q=80", details: "Flour, sugar, butter, eggs, chocolate chips.\nBake in oven 10-12 minutes."},
-  {name: "Chocolate Cake", category: "Dessert", image: "https://images.unsplash.com/photo-1601972568154-0cf52b7e928c?auto=format&fit=crop&w=400&q=80", details: "Flour, cocoa, sugar, eggs, butter.\nMix, bake, and frost."},
-  {name: "Ice Cream Sundae", category: "Dessert", image: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=400&q=80", details: "Ice cream, chocolate syrup, nuts, whipped cream.\nAssemble and serve."}
+  {name: "Chocolate Chip Cookies", category: "Dessert", image: "https://picsum.photos/400/300?random=10", details: "Flour, sugar, butter, eggs, chocolate chips.\nBake in oven 10-12 minutes."},
+  {name: "Chocolate Cake", category: "Dessert", image: "https://picsum.photos/400/300?random=11", details: "Flour, cocoa, sugar, eggs, butter.\nMix, bake, and frost."},
+  {name: "Ice Cream Sundae", category: "Dessert", image: "https://picsum.photos/400/300?random=12", details: "Ice cream, chocolate syrup, nuts, whipped cream.\nAssemble and serve."}
 ];
 
 const recipesList = document.getElementById("recipes");
