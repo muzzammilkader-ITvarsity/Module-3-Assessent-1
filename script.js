@@ -39,3 +39,49 @@ const recipes = [
   {name: "Lemon Tart", category: "Dessert", image: "lemon_tart.jpg", details: "Lemon juice, sugar, eggs, tart crust.\nBake until set and cool."},
   {name: "Fruit Parfait", category: "Dessert", image: "fruit_parfait.jpg", details: "Yogurt, granola, fruits.\nLayer ingredients in glass."}
 ];
+
+const recipesList = document.getElementById("recipes");
+const searchInput = document.getElementById("search");
+const categoryButtons = document.querySelectorAll("#category-buttons button");
+
+function displayRecipes(filteredRecipes) {
+  recipesList.innerHTML = "";
+  filteredRecipes.forEach(recipe => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <img src="${recipe.image}" alt="${recipe.name}">
+      <div>
+        <h3>${recipe.name}</h3>
+        <p><strong>Category:</strong> ${recipe.category}</p>
+        <p>${recipe.details.replace(/\n/g, "<br>")}</p>
+      </div>
+    `;
+    recipesList.appendChild(li);
+  });
+}
+
+// Show all recipes initially
+displayRecipes(recipes);
+
+// Search functionality
+searchInput.addEventListener("input", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const filtered = recipes.filter(r =>
+    r.name.toLowerCase().includes(searchTerm) ||
+    r.category.toLowerCase().includes(searchTerm)
+  );
+  displayRecipes(filtered);
+});
+
+// Category buttons functionality
+categoryButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.category;
+    if(category === "All") {
+      displayRecipes(recipes);
+    } else {
+      const filtered = recipes.filter(r => r.category === category);
+      displayRecipes(filtered);
+    }
+  });
+});
