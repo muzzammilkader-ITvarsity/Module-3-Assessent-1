@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fdf6e3;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2e8b57;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3cb371;
+}
+
+#recipes li {
+  background-color: #fff8dc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
